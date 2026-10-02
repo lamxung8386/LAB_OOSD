@@ -1,0 +1,55 @@
+<mxfile host="65bd71144e">
+    <diagram id="I4SKH7sT7ntM9GPdx2Uu" name="Page-1">
+        <mxGraphModel dx="515" dy="546" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1;fontColor=#003366;" value="SƠ ĐỒ C CƠ SỞ DỮ LIỆU QUAN HỆ (ER DIAGRAM)" vertex="1">
+                    <mxGeometry height="30" width="500" x="40" y="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="er_kh" parent="1" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="KHACH_HANG" vertex="1">
+                    <mxGeometry height="150" width="200" x="40" y="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="er_kh_fields" parent="er_kh" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=10;spacingTop=5;whiteSpace=wrap;overflow=hidden;rotatable=0;" value="PK  MaKH: string&#xa;    HoTen: string&#xa;    Email: string&#xa;    SoDienThoai: string&#xa;    DiaChi: string" vertex="1">
+                    <mxGeometry height="120" width="200" y="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="er_dh" parent="1" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="DON_HANG" vertex="1">
+                    <mxGeometry height="150" width="200" x="300" y="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="er_dh_fields" parent="er_dh" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=10;spacingTop=5;whiteSpace=wrap;overflow=hidden;rotatable=0;" value="PK  MaDH: string&#xa;FK  MaKH: string&#xa;    NgayDat: datetime&#xa;    TongTien: decimal&#xa;    TrangThai: string" vertex="1">
+                    <mxGeometry height="120" width="200" y="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="er_ctdh" parent="1" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="CHI_TIET_DON_HANG" vertex="1">
+                    <mxGeometry height="150" width="210" x="560" y="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="er_ctdh_fields" parent="er_ctdh" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=10;spacingTop=5;whiteSpace=wrap;overflow=hidden;rotatable=0;" value="PK,FK  MaDH: string&#xa;PK,FK  MaSP: string&#xa;       SoLuong: int&#xa;       DonGia: decimal" vertex="1">
+                    <mxGeometry height="120" width="210" y="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="er_sp" parent="1" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="SAN_PHAM" vertex="1">
+                    <mxGeometry height="150" width="210" x="830" y="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="er_sp_fields" parent="er_sp" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=10;spacingTop=5;whiteSpace=wrap;overflow=hidden;rotatable=0;" value="PK  MaSP: string&#xa;    TenSP: string&#xa;    GiaBan: decimal&#xa;    SoLuongTon: int&#xa;    MaSP_External: string" vertex="1">
+                    <mxGeometry height="120" width="210" y="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="er_gd" parent="1" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="GIAO_DICH_THANH_TOAN" vertex="1">
+                    <mxGeometry height="160" width="210" x="300" y="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="er_gd_fields" parent="er_gd" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=10;spacingTop=5;whiteSpace=wrap;overflow=hidden;rotatable=0;" value="PK     MaGD: string&#xa;FK,UK  MaDH: string&#xa;       PhuongThuc: string&#xa;       MaGiaoDichNgoai: string&#xa;       TrangThaiGD: string&#xa;       NgayGD: datetime" vertex="1">
+                    <mxGeometry height="130" width="210" y="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="rel1" edge="1" parent="1" source="er_kh" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;endArrow=ERmany;endFill=0;startArrow=ERone;startFill=0;" target="er_dh" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="rel2" edge="1" parent="1" source="er_dh" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;endArrow=ERmany;endFill=0;startArrow=ERone;startFill=0;" target="er_ctdh" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="rel3" edge="1" parent="1" source="er_sp" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;endArrow=ERmany;endFill=0;startArrow=ERone;startFill=0;" target="er_ctdh" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="rel4" edge="1" parent="1" source="er_dh" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;endArrow=ERone;endFill=0;startArrow=ERone;startFill=0;" target="er_gd" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

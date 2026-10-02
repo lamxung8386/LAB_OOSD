@@ -1,0 +1,69 @@
+<mxfile host="65bd71144e">
+    <diagram id="vk74aoecXy_q897ln0_t" name="Page-1">
+        <mxGraphModel dx="515" dy="546" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1;fontColor=#003366;" value="SƠ ĐỒ LỚP THIẾT KẾ (DESIGN CLASS DIAGRAM)" vertex="1">
+                    <mxGeometry height="30" width="500" x="40" y="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_ui" parent="1" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="CheckoutForm" vertex="1">
+                    <mxGeometry height="130" width="220" x="40" y="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_ui_fields" parent="cls_ui" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=10;spacingTop=5;whiteSpace=wrap;overflow=hidden;rotatable=0;" value="- txtAddress: TextBox&#xa;- cmbPaymentMethod: ComboBox&#xa;------------------------------------&#xa;+ btnPay_Click()" vertex="1">
+                    <mxGeometry height="100" width="220" y="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_ctrl" parent="1" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="OrderController" vertex="1">
+                    <mxGeometry height="130" width="230" x="340" y="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_ctrl_fields" parent="cls_ctrl" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=10;spacingTop=5;whiteSpace=wrap;overflow=hidden;rotatable=0;" value="- orderService: OrderService&#xa;------------------------------------&#xa;+ CreateOrder(cart: Cart): bool" vertex="1">
+                    <mxGeometry height="100" width="230" y="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_pay" parent="1" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;fillColor=#f8cecc;strokeColor=#b85450;" value="PaymentAdapter" vertex="1">
+                    <mxGeometry height="130" width="220" x="650" y="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_pay_fields" parent="cls_pay" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=10;spacingTop=5;whiteSpace=wrap;overflow=hidden;rotatable=0;" value="- apiKey: string&#xa;------------------------------------&#xa;+ Pay(amount: decimal): bool" vertex="1">
+                    <mxGeometry height="100" width="220" y="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_email" parent="1" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;fillColor=#f8cecc;strokeColor=#b85450;" value="EmailAdapter" vertex="1">
+                    <mxGeometry height="130" width="320" x="650" y="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_email_fields" parent="cls_email" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=10;spacingTop=5;whiteSpace=wrap;overflow=hidden;rotatable=0;" value="- smtpClient: SmtpClient&#xa;------------------------------------&#xa;+ SendEmail(to: string, subject: string, body: string)" vertex="1">
+                    <mxGeometry height="100" width="320" y="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_repo" parent="1" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="OrderRepository" vertex="1">
+                    <mxGeometry height="130" width="230" x="340" y="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_repo_fields" parent="cls_repo" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=10;spacingTop=5;whiteSpace=wrap;overflow=hidden;rotatable=0;" value="- connectionString: string&#xa;------------------------------------&#xa;+ InsertOrder(order: Order): bool" vertex="1">
+                    <mxGeometry height="100" width="230" y="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_order" parent="1" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Order" vertex="1">
+                    <mxGeometry height="140" width="220" x="40" y="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_order_fields" parent="cls_order" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=10;spacingTop=5;whiteSpace=wrap;overflow=hidden;rotatable=0;" value="+ OrderId: string&#xa;+ CustomerId: string&#xa;+ TotalAmount: decimal&#xa;+ Status: string" vertex="1">
+                    <mxGeometry height="110" width="220" y="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_r1" edge="1" parent="1" source="cls_ui" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=0;" target="cls_ctrl">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_r2" edge="1" parent="1" source="cls_ctrl" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=0;" target="cls_pay">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_r3" edge="1" parent="1" source="cls_ctrl" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=0;" target="cls_email">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="610" y="155"/>
+                            <mxPoint x="610" y="325"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="cls_r4" edge="1" parent="1" source="cls_ctrl" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=0;" target="cls_repo">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_r5" edge="1" parent="1" source="cls_repo" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=0;dashed=1;" target="cls_order">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

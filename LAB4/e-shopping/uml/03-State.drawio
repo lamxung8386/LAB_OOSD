@@ -1,0 +1,94 @@
+<mxfile host="65bd71144e">
+    <diagram id="-VZUJyeoGViLKxGDnAMj" name="Page-1">
+        <mxGraphModel dx="1412" dy="933" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="tieu-de" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=24;fontStyle=1;fontColor=#1F2937;align=center;" value="SƠ ĐỒ TRẠNG THÁI - ĐƠN ĐẶT HÀNG" vertex="1">
+                    <mxGeometry height="45" width="600" x="500" y="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="bat-dau" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#1F2937;strokeColor=#1F2937;" value="" vertex="1">
+                    <mxGeometry height="35" width="35" x="90" y="430" as="geometry"/>
+                </mxCell>
+                <mxCell id="tao-don" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1565C0;fontSize=15;fontStyle=1;align=center;verticalAlign=middle;" value="TẠO ĐƠN ĐẶT HÀNG" vertex="1">
+                    <mxGeometry height="90" width="190" x="200" y="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="cho-kiem-tra" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#EF6C00;fontSize=15;fontStyle=1;align=center;verticalAlign=middle;" value="CHỜ KIỂM TRA&#xa;THANH TOÁN" vertex="1">
+                    <mxGeometry height="90" width="210" x="590" y="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="dang-kiem-tra" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFDE7;strokeColor=#F9A825;fontSize=15;fontStyle=1;align=center;verticalAlign=middle;" value="ĐANG KIỂM TRA&#xa;THANH TOÁN" vertex="1">
+                    <mxGeometry height="90" width="210" x="940" y="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="that-bai" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFEBEE;strokeColor=#C62828;fontSize=15;fontStyle=1;align=center;verticalAlign=middle;" value="THANH TOÁN&#xa;THẤT BẠI" vertex="1">
+                    <mxGeometry height="90" width="210" x="720" y="610" as="geometry"/>
+                </mxCell>
+                <mxCell id="thanh-cong" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontSize=15;fontStyle=1;align=center;verticalAlign=middle;" value="THANH TOÁN&#xa;THÀNH CÔNG" vertex="1">
+                    <mxGeometry height="90" width="210" x="1240" y="270" as="geometry"/>
+                </mxCell>
+                <mxCell id="dang-xu-ly" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8EAF6;strokeColor=#3949AB;fontSize=15;fontStyle=1;align=center;verticalAlign=middle;" value="ĐANG XỬ LÝ&#xa;ĐƠN HÀNG" vertex="1">
+                    <mxGeometry height="90" width="210" x="1240" y="450" as="geometry"/>
+                </mxCell>
+                <mxCell id="hoan-tat" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontSize=15;fontStyle=1;align=center;verticalAlign=middle;" value="HOÀN TẤT ĐƠN HÀNG" vertex="1">
+                    <mxGeometry height="90" width="210" x="1560" y="920" as="geometry"/>
+                </mxCell>
+                <mxCell id="huy-don" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFEBEE;strokeColor=#C62828;fontSize=15;fontStyle=1;align=center;verticalAlign=middle;" value="HỦY ĐƠN HÀNG" vertex="1">
+                    <mxGeometry height="90" width="210" x="1000" y="600" as="geometry"/>
+                </mxCell>
+                <mxCell id="ket-thuc" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#1F2937;strokeWidth=3;" value="" vertex="1">
+                    <mxGeometry height="35" width="35" x="1327.5" y="947.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="q1" edge="1" parent="1" source="bat-dau" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="tao-don" value="khách hàng chọn Đặt hàng">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="q2" edge="1" parent="1" source="tao-don" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="cho-kiem-tra" value="nhập đầy đủ thông tin">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="q3" edge="1" parent="1" source="cho-kiem-tra" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="dang-kiem-tra" value="gửi yêu cầu kiểm tra thanh toán">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="q4" edge="1" parent="1" source="dang-kiem-tra" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="thanh-cong" value="thanh toán hợp lệ">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="q5" edge="1" parent="1" source="dang-kiem-tra" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="that-bai" value="thanh toán không hợp lệ">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="q6" edge="1" parent="1" source="that-bai" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="cho-kiem-tra" value="nhập lại thông tin thanh toán">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="q7" edge="1" parent="1" source="that-bai" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="huy-don" value="khách hàng hủy đơn">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="q8" edge="1" parent="1" source="thanh-cong" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="dang-xu-ly" value="ghi nhận đơn hàng">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="q9" edge="1" parent="1" source="dang-xu-ly" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="dang-giao" value="đóng gói và bàn giao vận chuyển">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="q10" edge="1" parent="1" source="dang-giao" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="hoan-tat" value="giao hàng thành công">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="q11" edge="1" parent="1" source="dang-xu-ly" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="huy-don" value="hủy trước khi giao">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="q12" edge="1" parent="1" source="dang-giao" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="huy-don" value="giao không thành công / hủy">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="q13" edge="1" parent="1" source="hoan-tat" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="ket-thuc" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="q14" edge="1" parent="1" source="dang-giao" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="ket-thuc" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Eh1RXrL0HBA53wY1O2gr-1" edge="1" parent="1" source="huy-don" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="dang-giao" value="">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1650" y="665" as="sourcePoint"/>
+                        <mxPoint x="1548" y="850" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="dang-giao" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#6A1B9A;fontSize=15;fontStyle=1;align=center;verticalAlign=middle;" value="ĐANG GIAO HÀNG" vertex="1">
+                    <mxGeometry height="90" width="210" x="1240" y="740" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
