@@ -1,0 +1,9 @@
+# Copy this file to config.properties and set values for your SQL Server.
+server=localhost
+port=1433
+database=QuanLyHoSoBenhAn
+user=sa
+password=CHANGE_ME
+encrypt=true
+trustServerCertificate=true
+loginTimeout=6

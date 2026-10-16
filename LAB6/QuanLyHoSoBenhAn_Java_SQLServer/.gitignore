@@ -1,0 +1,7 @@
+target/
+*.class
+.vscode/
+.idea/
+*.iml
+# Khong commit cau hinh chua mat khau len git thuc:
+config.properties
