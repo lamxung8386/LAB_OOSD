@@ -1,0 +1,5 @@
+Tai goi Microsoft JDBC Driver for SQL Server 13.6 (ZIP) tu Microsoft.
+Chep vao thu muc lib:
+- mssql-jdbc-13.6.0.jre11.jar
+- mssql-jdbc_auth-13.6.0.x64.dll (file x64 trong thu muc auth cua goi tai ve)
+Sau do chay chay_kiem_tra_SQL_windows.bat truoc.
