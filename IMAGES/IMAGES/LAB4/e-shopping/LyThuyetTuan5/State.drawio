@@ -1,0 +1,80 @@
+<mxfile host="65bd71144e">
+    <diagram id="lHfSmSPSG817xN_URBuB" name="Page-1">
+        <mxGraphModel dx="515" dy="546" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1;fontColor=#003366;" value="SƠ ĐỒ TRẠNG THÁI (STATE DIAGRAM)" vertex="1">
+                    <mxGeometry height="30" width="500" x="40" y="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="st_start" parent="1" style="ellipse;fillColor=#000000;strokeColor=none;" value="" vertex="1">
+                    <mxGeometry height="30" width="30" x="40" y="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="st_cth" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;" value="ChoThanhToan" vertex="1">
+                    <mxGeometry height="40" width="120" x="120" y="95" as="geometry"/>
+                </mxCell>
+                <mxCell id="st_dth" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" value="DaThanhToan" vertex="1">
+                    <mxGeometry height="40" width="120" x="300" y="95" as="geometry"/>
+                </mxCell>
+                <mxCell id="st_dxl" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" value="DangXuLy" vertex="1">
+                    <mxGeometry height="40" width="120" x="480" y="95" as="geometry"/>
+                </mxCell>
+                <mxCell id="st_dg" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" value="DangGiao" vertex="1">
+                    <mxGeometry height="40" width="120" x="660" y="95" as="geometry"/>
+                </mxCell>
+                <mxCell id="st_ht" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" value="HoanThanh" vertex="1">
+                    <mxGeometry height="40" width="120" x="840" y="95" as="geometry"/>
+                </mxCell>
+                <mxCell id="st_end" parent="1" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+                    <mxGeometry height="30" width="30" x="1020" y="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="st_huy" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" value="Huy" vertex="1">
+                    <mxGeometry height="40" width="120" x="300" y="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="st_t1" edge="1" parent="1" source="st_start" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" target="st_cth" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="st_t2" edge="1" parent="1" source="st_cth" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" target="st_dth" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="st_t3" edge="1" parent="1" source="st_dth" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" target="st_dxl" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="st_t4" edge="1" parent="1" source="st_dxl" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" target="st_dg" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="st_t5" edge="1" parent="1" source="st_dg" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" target="st_ht" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="st_t6" edge="1" parent="1" source="st_ht" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" target="st_end" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="st_t7" edge="1" parent="1" source="st_cth" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;exitX=0.5;exitY=1;entryX=0;entryY=0.5;" target="st_huy" value="">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="180" y="230"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="st_t8" edge="1" parent="1" source="st_dth" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="st_huy" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="st_t9" edge="1" parent="1" source="st_dxl" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;exitX=0.5;exitY=1;entryX=1;entryY=0.5;" target="st_huy" value="">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="540" y="230"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="st_t10" edge="1" parent="1" source="st_huy" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=1;" target="st_end" value="">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="360" y="290"/>
+                            <mxPoint x="1035" y="290"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
